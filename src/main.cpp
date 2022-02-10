@@ -2745,7 +2745,7 @@ bool LoadBlockIndex()
         pchMessageStart[0] = 0xfb;
         pchMessageStart[1] = 0xc2;
         pchMessageStart[2] = 0xb3;
-        pchMessageStart[3] = 0xdg;
+        pchMessageStart[3] = 0xdc;
         hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
     }
 
@@ -3079,7 +3079,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfb, 0xc5, 0xb1, 0xdg }; // Trihardcoin: increase each by adding 2 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xfb, 0xc5, 0xb1, 0xde }; // Trihardcoin: increase each by adding 2 to bitcoin's value.
 
 
 void static ProcessGetData(CNode* pfrom)
