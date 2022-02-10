@@ -1,0 +1,8 @@
+[Unit]
+Description=TrihardCoin Daemon Service
+After=multi-user.target[Service]
+[Service]
+Type=idle
+ExecStart=/root/TrihardCoin/src/trihardcoind
+[Install]
+WantedBy=multi-user.target
